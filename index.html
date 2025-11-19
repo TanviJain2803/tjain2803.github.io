@@ -14,198 +14,202 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             line-height: 1.6;
-            color: #2c3e50;
-            background-color: #fafafa;
+            color: #333;
+            background-color: #fff;
         }
 
-        .container {
-            max-width: 900px;
+        .masthead {
+            background-color: #f5f5f5;
+            padding: 1rem 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .masthead__inner-wrap {
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 3rem 2rem;
+            padding: 0 2rem;
         }
 
-        header {
-            background: white;
-            padding: 2.5rem;
-            margin-bottom: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        .masthead__menu nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        h1 {
-            font-size: 2.2rem;
+        .masthead__menu-item--lg a {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .visible-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .visible-links a {
+            color: #333;
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+
+        .visible-links a:hover {
+            text-decoration: underline;
+        }
+
+        #main {
+            display: flex;
+            max-width: 1200px;
+            margin: 2rem auto;
+            gap: 3rem;
+            padding: 0 2rem;
+        }
+
+        .sidebar {
+            flex: 0 0 250px;
+        }
+
+        .author__avatar {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 1.5rem;
+            display: block;
+            object-fit: cover;
+        }
+
+        .author__name {
+            font-size: 1.3rem;
             font-weight: 600;
             margin-bottom: 0.5rem;
-            color: #1a1a1a;
+            color: #333;
         }
 
-        .subtitle {
-            font-size: 1.05rem;
+        .author__bio {
             color: #666;
-            margin-bottom: 1.2rem;
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
         }
 
-        .contact {
-            display: flex;
-            gap: 1.5rem;
-            flex-wrap: wrap;
-            font-size: 0.95rem;
+        .author__urls {
+            list-style: none;
         }
 
-        .contact a {
-            color: #2c3e50;
+        .author__urls li {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .author__urls a {
+            color: #0366d6;
             text-decoration: none;
-            padding: 0.4rem 0.8rem;
-            border-radius: 4px;
-            transition: background-color 0.2s;
         }
 
-        .contact a:hover {
-            background-color: #f0f0f0;
+        .author__urls a:hover {
+            text-decoration: underline;
         }
 
-        nav {
-            background: white;
-            padding: 1rem 2.5rem;
-            margin-bottom: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        .archive {
+            flex: 1;
+            max-width: 800px;
         }
 
-        nav a {
-            color: #666;
-            text-decoration: none;
-            margin-right: 2rem;
-            font-size: 0.95rem;
-            transition: color 0.2s;
+        .page__title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: #333;
         }
 
-        nav a:hover {
-            color: #2c3e50;
-        }
-
-        section {
-            background: white;
-            padding: 2.5rem;
-            margin-bottom: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        .archive > p {
+            margin-bottom: 1rem;
+            text-align: justify;
         }
 
         h2 {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             font-weight: 600;
-            margin-bottom: 1.5rem;
-            color: #1a1a1a;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid #e8e8e8;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: #333;
         }
 
         h3 {
             font-size: 1.1rem;
             font-weight: 600;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            color: #444;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+            color: #333;
         }
 
-        .item {
+        .publication-entry {
+            margin-bottom: 1.5rem;
+        }
+
+        .publication-entry p {
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .publication-entry strong {
+            color: #333;
+            font-weight: 600;
+        }
+
+        .publication-entry a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+
+        .publication-entry a:hover {
+            text-decoration: underline;
+        }
+
+        .experience-entry {
             margin-bottom: 2rem;
-            padding-bottom: 2rem;
-            border-bottom: 1px solid #f0f0f0;
         }
 
-        .item:last-child {
-            border-bottom: none;
-            padding-bottom: 0;
-        }
-
-        .item-header {
+        .experience-header {
             display: flex;
             justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 0.4rem;
+            margin-bottom: 0.3rem;
         }
 
-        .item-title {
+        .experience-title {
             font-weight: 600;
-            font-size: 1.05rem;
-            color: #1a1a1a;
+            color: #333;
         }
 
-        .item-date {
-            font-size: 0.9rem;
-            color: #999;
-        }
-
-        .item-org {
-            font-size: 0.95rem;
+        .experience-date {
             color: #666;
-            margin-bottom: 0.8rem;
+            font-size: 0.9rem;
         }
 
-        .item ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .item li {
-            margin-bottom: 0.6rem;
-            padding-left: 1.5rem;
-            position: relative;
+        .experience-org {
+            color: #666;
+            margin-bottom: 0.5rem;
             font-size: 0.95rem;
+        }
+
+        .experience-entry ul {
+            margin-left: 1.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .experience-entry li {
+            margin-bottom: 0.4rem;
             color: #555;
         }
 
-        .item li:before {
-            content: "•";
-            position: absolute;
-            left: 0.5rem;
-            color: #bbb;
-        }
-
-        .publication {
-            margin-bottom: 1.8rem;
-            padding-bottom: 1.8rem;
-            border-bottom: 1px solid #f0f0f0;
-        }
-
-        .publication:last-child {
-            border-bottom: none;
-            padding-bottom: 0;
-        }
-
-        .publication-title {
-            font-weight: 600;
-            font-size: 1rem;
-            color: #1a1a1a;
-            margin-bottom: 0.4rem;
-            line-height: 1.5;
-        }
-
-        .publication-authors {
-            color: #666;
-            margin-bottom: 0.3rem;
-            font-size: 0.95rem;
-        }
-
-        .publication-venue {
-            color: #999;
-            font-size: 0.9rem;
-        }
-
-        .award {
-            margin-bottom: 1.2rem;
-            padding: 1rem;
-            background: #f9f9f9;
-            border-radius: 4px;
-            border-left: 3px solid #e0e0e0;
+        .award-entry {
+            margin-bottom: 1rem;
         }
 
         .award-title {
             font-weight: 600;
-            color: #1a1a1a;
-            margin-bottom: 0.2rem;
+            color: #333;
         }
 
         .award-details {
@@ -214,236 +218,292 @@
         }
 
         .note {
-            font-size: 0.85rem;
-            color: #999;
             font-style: italic;
-            margin-bottom: 1.5rem;
+            color: #666;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        ul.interests {
+            list-style-position: inside;
+            margin-left: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        ul.interests li {
+            margin-bottom: 0.3rem;
         }
 
         @media (max-width: 768px) {
-            .container {
-                padding: 1.5rem 1rem;
-            }
-
-            header, section, nav {
-                padding: 1.5rem;
-            }
-
-            h1 {
-                font-size: 1.8rem;
-            }
-
-            .item-header {
+            #main {
                 flex-direction: column;
-                align-items: flex-start;
             }
 
-            .item-date {
-                margin-top: 0.2rem;
+            .sidebar {
+                flex: none;
             }
 
-            nav a {
-                display: block;
-                margin-bottom: 0.5rem;
-            }
-
-            .contact {
-                flex-direction: column;
-                gap: 0.5rem;
+            .visible-links {
+                flex-wrap: wrap;
+                gap: 1rem;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Tanvi Jain</h1>
-            <div class="subtitle">Computational Associate · The Broad Institute of MIT and Harvard</div>
-            <div class="contact">
-                <a href="mailto:tanvi.jain2803@gmail.com">📧 Email</a>
-                <a href="https://github.com/TanviJain2803">💻 GitHub</a>
-                <a href="https://www.linkedin.com/in/tanvi-jain2803">💼 LinkedIn</a>
-                <a href="https://scholar.google.com/citations?user=YOUR_ID">🎓 Google Scholar</a>
+    <div class="masthead">
+        <div class="masthead__inner-wrap">
+            <div class="masthead__menu">
+                <nav>
+                    <div class="masthead__menu-item masthead__menu-item--lg">
+                        <a href="#home">Tanvi Jain</a>
+                    </div>
+                    <ul class="visible-links">
+                        <li class="masthead__menu-item"><a href="#publications">Publications</a></li>
+                        <li class="masthead__menu-item"><a href="#experience">Experience</a></li>
+                        <li class="masthead__menu-item"><a href="#awards">Awards</a></li>
+                    </ul>
+                </nav>
             </div>
-        </header>
+        </div>
+    </div>
 
-        <nav>
-            <a href="#about">About</a>
-            <a href="#publications">Publications</a>
-            <a href="#research">Research</a>
-            <a href="#leadership">Leadership</a>
-            <a href="#awards">Awards</a>
-        </nav>
-
-        <section id="about">
-            <h2>About</h2>
-            <p>I am a Computational Associate at the Xavier Lab in the Klarman Cell Observatory at The Broad Institute of MIT and Harvard. My research focuses on multi-modal single-cell and spatial transcriptomics for disease gene target discovery, with applications in atopic dermatitis, inflammatory bowel disease, and cancer.</p>
-            <p style="margin-top: 1rem;">I graduated Cum Laude from UC San Diego with a B.S. in Biology (Bioinformatics specialization), maintaining a 3.93 GPA. My work spans developing computational pipelines for large-scale genomic data analysis, spatial omics applications, and identifying therapeutic targets for immune-related diseases.</p>
-        </section>
-
-        <section id="publications">
-            <h2>Publications</h2>
-            <p class="note">* indicates equal contribution</p>
-
-            <h3>2025</h3>
-            <div class="publication">
-                <div class="publication-title">Multi-modal skin atlas identifies a multicellular immune-stromal community associated with altered cornification and specific T cell expansion in atopic dermatitis</div>
-                <div class="publication-authors">Evgenij Fiskin*, Gökcen Eraslan*, Maria Alora-Palli*, <strong>Tanvi Jain*</strong>, et al.</div>
-                <div class="publication-venue">Nature Communications, Accepted (2025) · Co-first author</div>
-            </div>
-
-            <h3>In Review</h3>
-            <div class="publication">
-                <div class="publication-title">A microbiome-reactive TMIGD2hi Th17 subset is spatially enriched at the intestinal epithelium and expanded in IBD</div>
-                <div class="publication-authors">Thomas K. Pedersen*, <strong>Tanvi Jain</strong>, et al.</div>
-                <div class="publication-venue">Nature Immunology, In review</div>
-            </div>
-
-            <div class="publication">
-                <div class="publication-title">Identification of specific microbiota members that induce beige fat biogenesis in response to dietary cues</div>
-                <div class="publication-authors">Kenya Honda, Takeshi Tanoue, Manabu Nagayama, Ayumi Roochana, Samuel Zimmerman, Orr Ashenberg, <strong>Tanvi Jain</strong>, et al.</div>
-                <div class="publication-venue">Nature, In review</div>
-            </div>
-
-            <div class="publication">
-                <div class="publication-title">Sensitive transcriptomics and genotyping reveals function of genetic variants in immunity</div>
-                <div class="publication-authors">Kai Liu, Anders Rasmussen, Wenkai Han, Qiyu Gong, Seneca Bohley, <strong>Tanvi Jain</strong>, et al.</div>
-                <div class="publication-venue">Nature Genetics, In review</div>
-            </div>
-
-            <div class="publication">
-                <div class="publication-title">Stress drives plasticity in leaf maturation transcriptional dynamics</div>
-                <div class="publication-authors">Joseph Swift, Xuelin Wu, Jiaying Xu, <strong>Tanvi Jain</strong>, et al.</div>
-                <div class="publication-venue">Nature Plants, In review</div>
-            </div>
-        </section>
-
-        <section id="research">
-            <h2>Research Experience</h2>
-
-            <div class="item">
-                <div class="item-header">
-                    <div class="item-title">Computational Associate</div>
-                    <div class="item-date">July 2024 – Present</div>
+    <div id="main" role="main">
+        <div class="sidebar">
+            <div>
+                <img src="https://via.placeholder.com/200" class="author__avatar" alt="Tanvi Jain">
+                <div class="author__content">
+                    <h3 class="author__name">Tanvi Jain</h3>
+                    <p class="author__bio">Computational Associate at The Broad Institute of MIT and Harvard</p>
                 </div>
-                <div class="item-org">Xavier Lab · Klarman Cell Observatory · The Broad Institute</div>
-                <ul>
-                    <li>Building multi-modal single cell skin atlas for atopic dermatitis gene target discovery in collaboration with Dr. Aviv Regev and Dr. Gökcen Eraslan at Genentech</li>
-                    <li>Leading novel multimodal analysis in spatial transcriptomics (Xenium, CosMx & VisiumHD) data to identify gene signatures for early detection of colorectal cancer</li>
-                    <li>Investigating role of TMIGD2+ IELs and HHLA2+ epithelium in IBD via spatial transcriptomics</li>
-                    <li>Identifying potential therapeutic targets in T-cells for immune checkpoint blockade therapy in Glioblastoma</li>
-                </ul>
-            </div>
-
-            <div class="item">
-                <div class="item-header">
-                    <div class="item-title">Lab Technician</div>
-                    <div class="item-date">Feb 2022 – June 2024</div>
+                <div class="author__urls-wrapper">
+                    <ul class="author__urls">
+                        <li><i>📍</i> Boston, Massachusetts</li>
+                        <li><a href="mailto:tanvi.jain2803@gmail.com"><i>✉️</i> Email</a></li>
+                        <li><a href="https://www.linkedin.com/in/tanvi-jain2803"><i>💼</i> LinkedIn</a></li>
+                        <li><a href="https://github.com/TanviJain2803"><i>💻</i> Github</a></li>
+                        <li><a href="https://scholar.google.com/citations?user=YOUR_ID"><i>🎓</i> Google Scholar</a></li>
+                    </ul>
                 </div>
-                <div class="item-org">Ecker Lab · Salk Institute of Biological Sciences</div>
-                <ul>
-                    <li>Developed ~2M single cell atlas for ~800 Arabidopsis thaliana accessions</li>
-                    <li>Built large data analysis and visualization pipelines in R, Unix, Python, and Snakemake on HPC</li>
-                    <li>Performed sci-RNA seq assay library prep</li>
-                </ul>
             </div>
+        </div>
 
-            <div class="item">
-                <div class="item-header">
-                    <div class="item-title">Summer Intern · SenNet Consortium</div>
-                    <div class="item-date">June 2023 – Aug 2023</div>
+        <div class="archive">
+            <section id="home">
+                <h1 class="page__title">Tanvi Jain's Home Page</h1>
+                
+                <p>I am a Computational Associate at the Xavier Lab in the Klarman Cell Observatory at The Broad Institute of MIT and Harvard, where I work on multi-modal single-cell and spatial transcriptomics for disease gene target discovery. My research focuses on applications in atopic dermatitis, inflammatory bowel disease, and cancer.</p>
+
+                <p>I graduated Cum Laude from UC San Diego with a B.S. in Biology (Bioinformatics specialization), maintaining a 3.93 GPA. Prior to my current position, I worked as a Lab Technician at the Salk Institute of Biological Sciences under Dr. Joseph Ecker, where I developed computational pipelines for large-scale genomic data analysis.</p>
+
+                <h2>Field of Interests:</h2>
+                <ul class="interests">
+                    <li>Multi-modal single-cell transcriptomics</li>
+                    <li>Spatial omics and spatial transcriptomics</li>
+                    <li>Disease gene target discovery</li>
+                    <li>Computational biology and bioinformatics</li>
+                    <li>Immune-related diseases</li>
+                </ul>
+
+                <h2>Selected Awards:</h2>
+                <ul class="interests">
+                    <li>People's Choice Award - BroadHacks [June 2025]</li>
+                    <li>Spot Award - Broad Institute [March 2025]</li>
+                    <li>SenNet CUSP Fellowship - $8,000 [Summer 2023]</li>
+                    <li>Cum Laude Honors - UC San Diego [2024]</li>
+                    <li>Provost Honors 8/9 Quarters - UC San Diego [2021-2024]</li>
+                </ul>
+            </section>
+
+            <section id="publications">
+                <h1 class="page__title">Publications</h1>
+                <p class="note">* indicates equal contribution.</p>
+
+                <h2>2025</h2>
+                <div class="publication-entry">
+                    <p>
+                        <strong>Multi-modal skin atlas identifies a multicellular immune-stromal community associated with altered cornification and specific T cell expansion in atopic dermatitis</strong><br>
+                        Evgenij Fiskin*, Gökcen Eraslan*, Maria Alora-Palli*, <strong>Tanvi Jain*</strong>, et al.<br>
+                        <em>Nature Communications</em>, Accepted (2025)<br>
+                        <em>* co-first author</em>
+                    </p>
                 </div>
-                <div class="item-org">National Institute of Health (NIH) · Duke School of Medicine</div>
-                <ul>
-                    <li>Implemented SPADE in Python (published in Flowkit package) under Dr. Cliburn Chan</li>
-                    <li>Developed visualization and analysis tool for high-dimensional flow cytometry data</li>
-                </ul>
-            </div>
-        </section>
 
-        <section id="leadership">
-            <h2>Leadership & Outreach</h2>
-
-            <div class="item">
-                <div class="item-header">
-                    <div class="item-title">MIA Steering Committee</div>
-                    <div class="item-date">Feb 2025 – Present</div>
+                <h2>In Review / Preprints</h2>
+                <div class="publication-entry">
+                    <p>
+                        <strong>A microbiome-reactive TMIGD2hi Th17 subset is spatially enriched at the intestinal epithelium and expanded in IBD</strong><br>
+                        Thomas K. Pedersen*, <strong>Tanvi Jain</strong>, et al.<br>
+                        Manuscript to be submitted in <em>Nature Immunology</em>
+                    </p>
                 </div>
-                <div class="item-org">Models, Inference, and Algorithms · Broad Institute</div>
-                <ul>
-                    <li>Organized and co-hosted primers and talks for leading researchers in computational biology</li>
-                    <li>Co-hosted 10th MIA anniversary celebration with panelists including Dr. Aviv Regev</li>
-                </ul>
-            </div>
 
-            <div class="item">
-                <div class="item-header">
-                    <div class="item-title">Head of Communications</div>
-                    <div class="item-date">2023 – Present</div>
+                <div class="publication-entry">
+                    <p>
+                        <strong>Identification of specific microbiota members that induce beige fat biogenesis in response to dietary cues</strong><br>
+                        Kenya Honda, Takeshi Tanoue, Manabu Nagayama, Ayumi Roochana, Samuel Zimmerman, Orr Ashenberg, <strong>Tanvi Jain</strong>, et al.<br>
+                        <em>Nature</em>, In review
+                    </p>
                 </div>
-                <div class="item-org">Nucleate · Boston & San Diego</div>
-                <ul>
-                    <li>Lead Summit planning team for media coverage, content creation, and website development</li>
-                    <li>Lead Student Engagement at UC San Diego and Activator program Leadership</li>
-                    <li>Networked with 100+ biotech professionals and interviewed high-profile personalities</li>
-                </ul>
-            </div>
 
-            <div class="item">
-                <div class="item-header">
-                    <div class="item-title">Founder & Co-Director · Project Sukoon</div>
-                    <div class="item-date">2019 – 2021</div>
+                <div class="publication-entry">
+                    <p>
+                        <strong>Sensitive transcriptomics and genotyping reveals function of genetic variants in immunity</strong><br>
+                        Kai Liu, Anders Rasmussen, Wenkai Han, Qiyu Gong, Seneca Bohley, <strong>Tanvi Jain</strong>, et al.<br>
+                        <em>Nature Genetics</em>, In review
+                    </p>
                 </div>
-                <div class="item-org">Pathways World School · Delhi NCR, India</div>
-                <ul>
-                    <li>Raised awareness about menstrual hygiene and health in 50+ Delhi NCR slums</li>
-                    <li>Raised 100,000 INR via crowdfunding to deliver sustainable sanitary napkins during pandemic</li>
-                </ul>
-            </div>
-        </section>
 
-        <section id="awards">
-            <h2>Honors & Awards</h2>
+                <div class="publication-entry">
+                    <p>
+                        <strong>Stress drives plasticity in leaf maturation transcriptional dynamics</strong><br>
+                        Joseph Swift, Xuelin Wu, Jiaying Xu, <strong>Tanvi Jain</strong>, et al.<br>
+                        <em>Nature Plants</em>, In review
+                    </p>
+                </div>
+            </section>
 
-            <div class="award">
-                <div class="award-title">People's Choice Award · BroadHacks</div>
-                <div class="award-details">Broad Institute · June 2025</div>
-            </div>
+            <section id="experience">
+                <h1 class="page__title">Research Experience</h1>
 
-            <div class="award">
-                <div class="award-title">Spot Award</div>
-                <div class="award-details">Broad Institute · March 2025</div>
-            </div>
+                <div class="experience-entry">
+                    <div class="experience-header">
+                        <div class="experience-title">Computational Associate</div>
+                        <div class="experience-date">July 2024 - Present</div>
+                    </div>
+                    <div class="experience-org">Xavier Lab | Klarman Cell Observatory, The Broad Institute of MIT and Harvard</div>
+                    <ul>
+                        <li>Building multi-modal single cell skin atlas for atopic dermatitis gene target discovery in collaboration with Dr. Aviv Regev and Dr. Gökcen Eraslan at Genentech</li>
+                        <li>Leading novel multimodal analysis in spatial transcriptomics (Xenium, CosMx & VisiumHD) data to identify gene signatures for early detection of colorectal cancer</li>
+                        <li>Investigating role of TMIGD2+ IELs and HHLA2+ epithelium in IBD via spatial transcriptomics</li>
+                        <li>Identifying potential therapeutic targets in T-cells for immune checkpoint blockade therapy in Glioblastoma</li>
+                        <li>Co-first author on Nature Communications paper (2025) on atopic dermatitis multi-modal atlas</li>
+                    </ul>
+                </div>
 
-            <div class="award">
-                <div class="award-title">SenNet CUSP Fellowship ($8,000)</div>
-                <div class="award-details">National Institute of Health · Summer 2023</div>
-            </div>
+                <div class="experience-entry">
+                    <div class="experience-header">
+                        <div class="experience-title">Lab Technician</div>
+                        <div class="experience-date">Feb 2022 - June 2024</div>
+                    </div>
+                    <div class="experience-org">Ecker Lab | Salk Institute of Biological Sciences</div>
+                    <ul>
+                        <li>Developed ~2M single cell atlas for ~800 Arabidopsis thaliana accessions</li>
+                        <li>Built large data analysis and visualization pipelines in R, Unix, Python, and Snakemake on HPC</li>
+                        <li>Performed sci-RNA seq assay library prep</li>
+                    </ul>
+                </div>
 
-            <div class="award">
-                <div class="award-title">Cum Laude Honors</div>
-                <div class="award-details">UC San Diego · 2024 · GPA: 3.93 · Provost Honors 8/9 Quarters</div>
-            </div>
-        </section>
+                <div class="experience-entry">
+                    <div class="experience-header">
+                        <div class="experience-title">Summer Intern - SenNet Consortium</div>
+                        <div class="experience-date">June 2023 - Aug 2023</div>
+                    </div>
+                    <div class="experience-org">National Institute of Health (NIH) and Duke School of Medicine</div>
+                    <ul>
+                        <li>Implemented SPADE in Python (published in Flowkit package) under Dr. Cliburn Chan</li>
+                        <li>Developed visualization and analysis tool for high-dimensional flow cytometry data</li>
+                    </ul>
+                </div>
+            </section>
 
-        <section id="talks">
-            <h2>Selected Talks</h2>
+            <section id="leadership">
+                <h1 class="page__title">Leadership & Outreach</h1>
 
-            <div class="award">
-                <div class="award-title">Polyp Dysplasia and TMIGD2 IELs in UC IBD</div>
-                <div class="award-details">Xavier Lab Meeting · September 2025 · 90 attendees</div>
-            </div>
+                <div class="experience-entry">
+                    <div class="experience-header">
+                        <div class="experience-title">MIA Steering Committee</div>
+                        <div class="experience-date">Feb 2025 - Present</div>
+                    </div>
+                    <div class="experience-org">Models, Inference, and Algorithms | Broad Institute</div>
+                    <ul>
+                        <li>Organized and co-hosted primers and talks for leading researchers in computational biology</li>
+                        <li>Co-hosted 10th MIA anniversary celebration with panelists including Dr. Aviv Regev</li>
+                    </ul>
+                </div>
 
-            <div class="award">
-                <div class="award-title">Atopic Dermatitis and Beige Adipocyte</div>
-                <div class="award-details">Xavier Lab Meeting · April 2025 · 90 attendees</div>
-            </div>
+                <div class="experience-entry">
+                    <div class="experience-header">
+                        <div class="experience-title">Nucleate Leadership</div>
+                        <div class="experience-date">2023 - Present</div>
+                    </div>
+                    <div class="experience-org">Nucleate Headquarters | Boston, MA and San Diego, CA</div>
+                    <ul>
+                        <li>Head of Communications for Summit planning team (Aug 2025)</li>
+                        <li>Lead team for media coverage, content creation (Instagram, LinkedIn), and website development</li>
+                        <li>Lead Student Engagement at UC San Diego and Activator program Leadership</li>
+                        <li>Networked with 100+ biotech professionals and interviewed high-profile biotech personalities</li>
+                    </ul>
+                </div>
 
-            <div class="award">
-                <div class="award-title">Primer on Spatial Transcriptomics</div>
-                <div class="award-details">Nir Hacohen's Journal Club · August 2024 · 20 attendees</div>
-            </div>
-        </section>
+                <div class="experience-entry">
+                    <div class="experience-header">
+                        <div class="experience-title">Founder & Co-Director, Project Sukoon</div>
+                        <div class="experience-date">2019 - 2021</div>
+                    </div>
+                    <div class="experience-org">Pathways World School | Delhi NCR, India</div>
+                    <ul>
+                        <li>Raised awareness about menstrual hygiene and health in 50+ Delhi NCR slums</li>
+                        <li>Raised 100,000 INR via crowdfunding to deliver sustainable sanitary napkins during pandemic</li>
+                        <li>Led team of 4 managing workshop education, finance, operations, and communications</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="awards">
+                <h1 class="page__title">Honors & Awards</h1>
+
+                <div class="award-entry">
+                    <div class="award-title">People's Choice Award - BroadHacks</div>
+                    <div class="award-details">Broad Institute | June 2025<br>
+                    Project: Zero-shot evaluation of 3 recent pathology foundation models at patch-level gene expression prediction task</div>
+                </div>
+
+                <div class="award-entry">
+                    <div class="award-title">Spot Award</div>
+                    <div class="award-details">Broad Institute | March 2025</div>
+                </div>
+
+                <div class="award-entry">
+                    <div class="award-title">SenNet CUSP Fellowship - $8,000</div>
+                    <div class="award-details">National Institute of Health | June - August 2023</div>
+                </div>
+
+                <div class="award-entry">
+                    <div class="award-title">Cum Laude Honors</div>
+                    <div class="award-details">UC San Diego | June 2024<br>
+                    GPA: 3.93 | Provost Honors 8/9 Quarters</div>
+                </div>
+            </section>
+
+            <section id="talks">
+                <h1 class="page__title">Selected Talks</h1>
+                
+                <div class="publication-entry">
+                    <p>
+                        <strong>Atopic Dermatitis and Beige Adipocyte</strong><br>
+                        Xavier Lab Meeting | April 2025<br>
+                        90 attendees
+                    </p>
+                </div>
+
+                <div class="publication-entry">
+                    <p>
+                        <strong>Polyp Dysplasia and TMIGD2 IELs and HHLA2 Epithelial cell Interactions in UC IBD</strong><br>
+                        Xavier Lab Meeting | September 2025<br>
+                        90 attendees
+                    </p>
+                </div>
+
+                <div class="publication-entry">
+                    <p>
+                        <strong>Primer on Spatial Transcriptomics</strong><br>
+                        Nir Hacohen's Journal Club | August 2024<br>
+                        20 attendees
+                    </p>
+                </div>
+            </section>
+        </div>
     </div>
 </body>
 </html>
